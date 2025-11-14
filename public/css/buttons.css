@@ -1,0 +1,128 @@
+/* Tunisian Button Styles */
+:root {
+    --tunisian-red: #E70013;
+    --tunisian-white: #FFFFFF;
+    --tunisian-yellow: #FFD600;
+    --tunisian-gold: #D4AF37;
+    --tunisian-blue: #1E3A8A;
+}
+
+/* Primary Button - Tunisian Style */
+.btn-tunisian-primary {
+    background: linear-gradient(135deg, var(--tunisian-red) 0%, #C53030 100%);
+    color: var(--tunisian-white);
+    border: 2px solid var(--tunisian-red);
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-tunisian-primary:hover {
+    background: linear-gradient(135deg, var(--tunisian-yellow) 0%, #EAB308 100%);
+    color: var(--tunisian-red);
+    border-color: var(--tunisian-yellow);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 214, 0, 0.3);
+}
+
+/* Secondary Button - Tunisian Style */
+.btn-tunisian-secondary {
+    background: transparent;
+    color: var(--tunisian-red);
+    border: 2px solid var(--tunisian-red);
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-tunisian-secondary:hover {
+    background: var(--tunisian-red);
+    color: var(--tunisian-white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(231, 0, 19, 0.3);
+}
+
+/* Yellow Button - Tunisian Style */
+.btn-tunisian-yellow {
+    background: linear-gradient(135deg, var(--tunisian-yellow) 0%, #EAB308 100%);
+    color: var(--tunisian-red);
+    border: 2px solid var(--tunisian-yellow);
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-tunisian-yellow:hover {
+    background: linear-gradient(135deg, var(--tunisian-red) 0%, #C53030 100%);
+    color: var(--tunisian-white);
+    border-color: var(--tunisian-red);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(231, 0, 19, 0.3);
+}
+
+/* Small Button */
+.btn-tunisian-sm {
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+/* Large Button */
+.btn-tunisian-lg {
+    padding: 16px 32px;
+    font-size: 18px;
+}
+
+/* Button with Star Icon */
+.btn-tunisian-star::before {
+    content: "★ ";
+    color: var(--tunisian-yellow);
+    text-shadow: 0 0 10px rgba(255, 214, 0, 0.5);
+}
+
+/* Disabled Button */
+.btn-tunisian-primary:disabled,
+.btn-tunisian-secondary:disabled,
+.btn-tunisian-yellow:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+/* Button Group */
+.btn-group-tunisian {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* Responsive Buttons */
+@media (max-width: 768px) {
+    .btn-tunisian-primary,
+    .btn-tunisian-secondary,
+    .btn-tunisian-yellow {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    
+    .btn-group-tunisian {
+        flex-direction: column;
+    }
+} 
